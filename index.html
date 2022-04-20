@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <div class="image-container">
+      <div class="logo-container">
+        <img src="./assets/odin-lined.png" alt="Odin logo" />
+        <h1>ODIN</h1>
+      </div>
+
+      <address>
+        Photo by
+        <a href="https://unsplash.com/@kristapsungurs">Kristaps Ungurs</a>
+        on
+        <a href="https://unsplash.com">Unsplash</a>
+      </address>
+    </div>
+    <div class="form-container">
+      <div class="upper-form-container">
+        <p>
+          This is not a real online service! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Necessitatibus, commodi! Sign up now to
+          get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="middle-form-container">
+        <form id="form">
+          <p>Let's do this!</p>
+
+          <div class="inside-form">
+            <div class="form-1">
+              <label for="first-name">
+                FIRST NAME
+                <input type="text" name="first-name" id="first-name" required />
+              </label>
+
+              <label for="tel">
+                PHONE NUMBER
+                <input type="tel" name="tel" id="tel" required />
+              </label>
+
+              <label for="password">
+                PASSWORD
+                <input type="password" name="password" id="password" required />
+              </label>
+            </div>
+
+            <div class="form-2">
+              <label for="last-name">
+                LAST NAME
+                <input type="text" name="last-name" id="last-name" required />
+              </label>
+
+              <label for="email">
+                EMAIL
+                <input type="email" name="email" id="email" required />
+              </label>
+
+              <label for="cpassword">
+                CONFIRM PASSWORD
+                <input
+                  type="password"
+                  name="cpassword"
+                  id="cpassword"
+                  required
+                />
+              </label>
+            </div>
+          </div>
+        </form>
+        <button type="submit" form="form">Create Account</button>
+      </div>
+      <div class="lower-form-container">
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>

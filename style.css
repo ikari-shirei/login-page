@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  font-size: 16px;
+  --color1: white;
+  --color2: rgba(0, 0, 0, 0.603);
+  --color3: rgba(160, 160, 160, 0.048);
+  --color4: rgba(0, 0, 0, 0.5);
+  --color5: rgba(0, 0, 0, 0.096);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+
+  display: flex;
+  background-color: var(--color3);
+}
+
+/* IMAGE */
+
+.image-container {
+  position: relative;
+
+  height: 100vh;
+  width: 50%;
+
+  background-image: url('./assets/kristaps-ungurs-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.logo-container {
+  position: absolute;
+  top: 25vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.logo-container img {
+  width: 75px;
+}
+
+.logo-container h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.3rem;
+  color: var(--color1);
+}
+
+.image-container address {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 8px;
+  color: var(--color1);
+
+  font-size: 0.7rem;
+}
+
+.image-container address a {
+  color: var(--color1);
+}
+
+/* FORM */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.upper-form-container {
+  color: var(--color2);
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+
+  padding-top: 15vh;
+  padding-bottom: 8vh;
+
+  width: 100%;
+}
+
+.upper-form-container p {
+  font-size: 1.1rem;
+  margin-left: 4vw;
+  width: 65%;
+}
+
+.upper-form-container p:nth-child(2) {
+  margin-top: 24px;
+}
+
+.upper-form-container p:nth-child(2) em {
+  font-style: italic;
+}
+
+.middle-form-container p {
+  color: var(--color2);
+
+  letter-spacing: 0.02rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  padding-bottom: 2vh;
+}
+
+.middle-form-container form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2vh 4vw;
+  background-color: var(--color1);
+
+  -webkit-box-shadow: 5px 3px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 3px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.inside-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.inside-form .form-2 {
+  margin-left: 3vw;
+}
+
+.inside-form label {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2vh;
+
+  color: var(--color4);
+
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.inside-form label > input {
+  padding-left: 8px !important;
+  padding: 0.2rem;
+  margin-top: 4px;
+
+  border: 1px solid var(--color5);
+  border-radius: 4px;
+
+  color: var(--color2);
+
+  width: 250px;
+}
+
+.middle-form-container button {
+  margin-left: 4vw;
+  margin-top: 4vh;
+
+  padding: 8px;
+  width: 175px;
+
+  border-radius: 8px;
+  border: 0;
+
+  color: var(--color1);
+  background-color: var(--color2);
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.lower-form-container {
+  margin-left: 4vw;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.lower-form-container p {
+  font-size: 0.8rem;
+  color: var(--color2);
+}
+
+.lower-form-container p a {
+  color: var(--color2);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .image-container {
+    width: 0;
+  }
+
+  .inside-form {
+    flex-direction: column;
+  }
+
+  .inside-form .form-2 {
+    margin-left: 0;
+  }
+
+  .inside-form label {
+    width: 100%;
+  }
+
+  .inside-form label > input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inside-form label > input {
+    width: 90%;
+  }
+}
